@@ -131,6 +131,7 @@ namespace UImGui
 				enabled = false;
 				throw new System.Exception($"Failed to start: {reason}.");
 			}
+			_camera = Camera.main;
 
 			if (_camera == null)
 			{
